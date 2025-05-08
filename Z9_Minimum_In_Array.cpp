@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+    int arr[] = {2, 3, 4, 1, 5};
+    int size = sizeof(arr) / sizeof(arr[0]);
+    int minValue = arr[0];
+
+    for (int i = 1; i < size; i++) {
+        if (arr[i] < minValue) {
+            minValue = arr[i];
+        }
+    }
+    cout << "Minimum value: " << minValue;
+    return 0;
+}
