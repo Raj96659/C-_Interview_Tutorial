@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int arr[] = {1, 2, 4, 5}, n = 5, sum = 0;
+    for (int i = 0; i < 4; i++) sum += arr[i];
+    int total = n * (n + 1) / 2;
+    cout << total - sum << endl; // Output: 3
+    return 0;
+}
